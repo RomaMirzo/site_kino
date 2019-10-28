@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contact</title>
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+	<div class="main">
+		
+		<div class="header">
+			<div class="logo">
+				<div class="logo_text">
+					<h1><a href="index.html">GoodFilms</a></h1>
+					<h2>The best films for every taste</h2>
+				</div>
+			</div>
+			
+			<div class="menubar">
+				
+				<ul class="menu">
+					<li><a href="index.html">Home</a></li>	
+					<li><a href="films.html">Films</a></li>
+					<li class="selected"><a href="contact.html">Contacts</a></li>
+				</ul>
+
+			</div>
+
+		</div>
+
+			
+		<div class="site_content">
+			
+			<div class="sidebar_container">
+				
+				<div class="sidebar">
+					<h2>SEARCH</h2>
+					<form onsubmit="search()" method="post" action="#" id="search_form" >
+						<input type="search" name="search_field" placeholder="your request" />
+						<input type="submit" class="btn" value="find" />
+					</form>
+				</div>
+
+				<div class="sidebar">
+					<h2>ENTRY</h2>
+					<form onsubmit="search()" method="post" action="#" id="login">
+						
+						<input type="text" name="login_field" placeholder="login" />
+						<input type="password" name="password_field" placeholder="password" />
+						<input type="submit" class="btn" value="entry" />
+						<div class="lables_passreg_text">
+							<span><a href="#">Forgot your password?</a></span> | <span><a href="#">Registration</a></span>
+						</div>
+
+					</form>
+				</div>
+
+				<div class="sidebar">
+					<h2>NEWS</h2>
+					<span>13.12.2020</span>
+					<p>We launched an advanced search.</p>
+					<a href="#">read</a>
+				</div>
+
+				<div class="sidebar">
+					<h2>Movie rating</h2>
+					<ul>
+						<li>Interstellar<span class="rating_sidebar">8.1</span></li>
+						<li>Matrix<span class="rating_sidebar">8.0</span></li>
+						<li>Crazy Max<span class="rating_sidebar">7.5</span></li>
+						<li>Cloud Atlas<span class="rating_sidebar">7.4</span></li>
+					</ul>
+				</div>
+
+			</div>
+
+			<div class="content">
+				
+				<h1>Contacts</h1>
+				<p>Send your feedback about the site</p>
+	
+				<div class="send send_contact">	
+					<form onsubmit="search()" method="post" action="#" id="contact">
+						<input type="text" name="review_name" placeholder="Your name">
+						<input type="text" name="review_email" placeholder="Your email">
+						<textarea name="review_text"></textarea>
+						<input class="btn" type="submit" value="send a message">
+					</form>
+				</div>
+
+
+			
+
+			</div>
+
+		</div>
+
+
+
+
+
+	<div class="footer">
+		<p>
+			<a href="index.html">HOME</a> |
+			<a href="films.html">FILMS</a> | 
+			<a href="contact.html">CONTACTS</a>
+		</p>
+		<p>GoodFilms 2020</p>
+	</div>
+
+	</div>
+	
+	<script src="javascript.js"></script>
+</body>
+</html>

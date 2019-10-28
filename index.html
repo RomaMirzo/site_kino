@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Main page</title>
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+	<div class="main">
+		
+		<div class="header">
+			<div class="logo">
+				<div class="logo_text">
+					<h1><a href="index.html">GoodFilms</a></h1>
+					<h2>The best films for every taste</h2>
+				</div>
+			</div>
+			
+			<div class="menubar">
+				
+				<ul class="menu">
+					<li class="selected"><a href="index.html">Home</a></li>	
+					<li><a href="films.html">Films</a></li>
+					<li><a href="contact.html">Contacts</a></li>
+				</ul>
+
+			</div>
+
+		</div>
+
+			
+		<div class="site_content">
+			
+			<div class="sidebar_container">
+				
+				<div class="sidebar">
+					<h2>SEARCH</h2>
+					<form onsubmit="search()" method="post" action="#" id="search_form" >
+						<input type="search" name="search_field" placeholder="your request" />
+						<input type="submit" class="btn" value="find" />
+					</form>
+				</div>
+
+				<div class="sidebar">
+					<h2>ENTRY</h2>
+					<form onsubmit="search()" method="post" action="#" id="login">
+						
+						<input type="text" name="login_field" placeholder="login" />
+						<input type="password" name="password_field" placeholder="password" />
+						<input type="submit" class="btn" value="entry" />
+						<div class="lables_passreg_text">
+							<span><a href="#">Forgot your password?</a></span> | <span><a href="#">Registration</a></span>
+						</div>
+
+					</form>
+				</div>
+
+				<div class="sidebar">
+					<h2>NEWS</h2>
+					<span>13.12.2020</span>
+					<p>We launched an advanced search.</p>
+					<a href="#">read</a>
+				</div>
+
+				<div class="sidebar">
+					<h2>Movie rating</h2>
+					<ul>
+						<li>Interstellar<span class="rating_sidebar">8.1</span></li>
+						<li>Matrix<span class="rating_sidebar">8.0</span></li>
+						<li>Crazy Max<span class="rating_sidebar">7.5</span></li>
+						<li>Cloud Atlas<span class="rating_sidebar">7.4</span></li>
+					</ul>
+				</div>
+
+			</div>
+
+			<div class="content">
+				
+				<h1>New movies</h1>
+
+				<div class="films_block">
+					<button class="btn btn_js" onclick="prev_films()">Prev</button>
+					<img id="new_movies_img" src="assets/img/matrix.png">
+					<button class="btn btn_js" onclick="next_films()">Next</button>
+				</div>
+
+				<h1>New series</h1>
+
+				<div class="films_block">
+					<button class="btn btn_js" onclick="prev_series()">Prev</button>
+					<img id="new_series_img" src="assets/img/dead.png">
+					<button class="btn btn_js" onclick="next_series()">Next</button>
+				</div>
+
+
+				<div class="posts">
+					
+					<hr>
+					<h2>As filmed Interstellar</h2>
+					<div class="posts_content">
+						<p>
+							Christopher Nolan, one of the most successful filmmakers of our time, whose work is equally loved by both demanding critics and ordinary spectators, turned 45 years old. The film was originally made by Paramount. When Christopher Nolan took over as director, Warner Bros. Studios, which released his latest films, got involved in the project.
+						</p>
+					</div>
+
+					<p><a href="https://www.okino.ua/article/kak-snimali-interstellar-1193/">to read</a></p>
+
+					<hr>
+		            <h2>Actor Tom Hanks shared his impression of the festival</h2>
+		            <div class="posts_content">
+		              <p>On February 16, the 67th British Academy Awards ceremony was held in London. Leonardo DiCaprio, Brad Pitt, Angelina Jolie, Cate Blanchett, Helen Mirren, Amy Adams, Christian Bale, Alfonso Cuaron and other guests and award winners are in our report.</p>
+		            </div>
+		            <p><a href="http://thr.ru/theatre/tom-henks-podelilsa-vpecatleniem-ot-inferno/">to read</a></p>
+
+				</div>
+
+
+			</div>
+
+		</div>
+
+
+	<div class="footer">
+		<p>
+			<a href="index.html">HOME</a> |
+			<a href="films.html">FILMS</a> | 
+			<a href="contact.html">CONTACTS</a>
+		</p>
+		<p>GoodFilms 2020</p>
+	</div>
+
+	</div>
+	
+	<script src="javascript.js"></script>
+</body>
+</html>

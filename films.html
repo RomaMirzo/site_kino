@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Films</title>
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+	<div class="main">
+		
+		<div class="header">
+			<div class="logo">
+				<div class="logo_text">
+					<h1><a href="index.html">GoodFilms</a></h1>
+					<h2>The best films for every taste</h2>
+				</div>
+			</div>
+			
+			<div class="menubar">
+				
+				<ul class="menu">
+					<li><a href="index.html">Home</a></li>	
+					<li class="selected"><a href="films.html">Films</a></li>
+					<li><a href="contact.html">Contacts</a></li>
+				</ul>
+
+			</div>
+
+		</div>
+
+			
+		<div class="site_content">
+			
+			<div class="sidebar_container">
+				
+				<div class="sidebar">
+					<h2>SEARCH</h2>
+					<form onsubmit="search()" method="post" action="#" id="search_form" >
+						<input type="search" name="search_field" placeholder="your request" />
+						<input type="submit" class="btn" value="find" />
+					</form>
+				</div>
+
+				<div class="sidebar">
+					<h2>ENTRY</h2>
+					<form onsubmit="search()" method="post" action="#" id="login">
+						
+						<input type="text" name="login_field" placeholder="login" />
+						<input type="password" name="password_field" placeholder="password" />
+						<input type="submit" class="btn" value="entry" />
+						<div class="lables_passreg_text">
+							<span><a href="#">Forgot your password?</a></span> | <span><a href="#">Registration</a></span>
+						</div>
+
+					</form>
+				</div>
+
+				<div class="sidebar">
+					<h2>NEWS</h2>
+					<span>13.12.2020</span>
+					<p>We launched an advanced search.</p>
+					<a href="#">read</a>
+				</div>
+
+				<div class="sidebar">
+					<h2>Movie rating</h2>
+					<ul>
+						<li>Interstellar<span class="rating_sidebar">8.1</span></li>
+						<li>Matrix<span class="rating_sidebar">8.0</span></li>
+						<li>Crazy Max<span class="rating_sidebar">7.5</span></li>
+						<li>Cloud Atlas<span class="rating_sidebar">7.4</span></li>
+					</ul>
+				</div>
+
+			</div>
+
+			<div class="content">
+				
+				<div class="info_film">
+					<img src="assets/img/inter.png">
+					When drought leads humanity to a food crisis, a team of researchers and scientists travels through a wormhole (which supposedly connects space-time regions over a long distance) on a journey to transcend the former restrictions on human space travel and relocate humanity to another planet.
+					<div class="button"><a href="#">Look</a></div>
+				</div>
+
+				<div class="info_film">
+					<img src="assets/img/max.png">
+					In the near future, after a major catastrophe that struck our urban civilization, all life was concentrated along countless highways. The road has become a way of being. And gave many the opportunity to show their most cruel instincts. A gang of bikers on powerful motorbikes, wanting to pay for their murdered comrade, is chasing young police officer Max.
+					<div class="button"><a href="#">Look</a></div>
+				</div>
+
+				<div class="info_film">
+					<img src="assets/img/matrix.png">
+					In the near future, after a major catastrophe that struck our urban civilization, all life was concentrated along countless highways. The road has become a way of being. And gave many the opportunity to show their most cruel instincts. A gang of bikers on powerful motorbikes, wanting to pay for their murdered comrade, is chasing young police officer Max.
+					<div class="button"><a href="#">Look</a></div>
+				</div>
+
+				<div class="info_film">
+					<img src="assets/img/cloud.png">
+					Six stories - five reincarnations, occurring at different times, are closely intertwined
+					<div class="button"><a href="#">Look</a></div>
+				</div>
+
+			
+
+			</div>
+
+		</div>
+
+
+
+
+
+	<div class="footer">
+		<p>
+			<a href="index.html">HOME</a> |
+			<a href="films.html">FILMS</a> | 
+			<a href="contact.html">CONTACTS</a>
+		</p>
+		<p>GoodFilms 2020</p>
+	</div>
+
+	</div>
+	
+	<script src="javascript.js"></script>
+</body>
+</html>
